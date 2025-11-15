@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Đăng kí thành viên CLB ngoại khóa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffcc;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+        }
+        td.label {
+            width: 120px;
+            vertical-align: top;
+            padding: 6px 0;
+        }
+        td.input {
+            padding: 6px 0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 220px;
+            padding: 3px;
+        }
+        textarea {
+            width: 220px;
+            height: 120px;
+        }
+        .submit-row {
+            text-align: center;
+            padding-top: 10px;
+        }
+        input[type="submit"] {
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ĐĂNG KÍ THÀNH VIÊN CLB NGOẠI KHÓA<br>
+TRƯỜNG THPT CHUYÊN CHU VĂN AN</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td class="label">Họ tên:</td>
+            <td class="input"><input type="text" name="hoten"></td>
+        </tr>
+        <tr>
+            <td class="label">Email:</td>
+            <td class="input"><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td class="label">Ngày sinh:</td>
+            <td class="input"><input type="date" name="ngaysinh"></td>
+        </tr>
+        <tr>
+            <td class="label">Địa chỉ:</td>
+            <td class="input">
+                <textarea name="diachi"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Giới tính:</td>
+            <td class="input">
+                <input type="radio" name="gioitinh" value="Nam"> Nam
+                <br>
+                <input type="radio" name="gioitinh" value="Nu"> Nữ
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Sở thích:</td>
+            <td class="input">
+                <input type="checkbox" name="sothich" value="covua"> Cờ vua<br>
+                <input type="checkbox" name="sothich" value="game"> Trò chơi điện tử<br>
+                <input type="checkbox" name="sothich" value="dulich"> Du lịch<br>
+                <input type="checkbox" name="sothich" value="camhoa"> Cắm hoa<br>
+                <input type="checkbox" name="sothich" value="nauan"> Nấu ăn
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Hồ sơ đính kèm:</td>
+            <td class="input">
+                <input type="file" name="hoso">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">Đăng kí CLB:</td>
+            <td class="input">
+                <select name="clb">
+                    <option>Bóng đá</option>
+                    <option>Bóng bàn</option>
+                    <option>Bóng rổ</option>
+                    <option>Bóng chuyền</option>
+                    <option>Cầu lông</option>
+                    <option>Cờ vua</option>
+                    <option>Âm nhạc</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="submit-row">
+                <input type="submit" value="Đăng kí">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
+
